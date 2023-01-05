@@ -1,0 +1,207 @@
+============================================================================================================================================
+Table Name: global		 Parent Name: None
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+binarySearch        int                                     function                                0                   4                   binarySearch        
+main                int                                     function                                4                   4                   main                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+Table Name: binarySearch		 Parent Name: global
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+a                   array(0, int)                           parameter                               0                   0                   NULL                
+c                   int                                     local               0                   0                   4                   NULL                
+l                   int                                     parameter                               4                   4                   NULL                
+m                   int                                     parameter                               8                   4                   NULL                
+mid                 int                                     local                                   12                  4                   NULL                
+n                   int                                     parameter                               16                  4                   NULL                
+return              int                                     local                                   20                  4                   NULL                
+t                   int                                     local                                   24                  4                   NULL                
+t0                  int                                     temporary           0                   28                  4                   NULL                
+t1                  int                                     temporary           1                   32                  4                   NULL                
+t10                 int                                     temporary                               36                  4                   NULL                
+t11                 int                                     temporary           1                   40                  4                   NULL                
+t12                 int                                     temporary                               44                  4                   NULL                
+t13                 int                                     temporary                               48                  4                   NULL                
+t2                  int                                     temporary                               52                  4                   NULL                
+t3                  int                                     temporary                               56                  4                   NULL                
+t4                  int                                     temporary           2                   60                  4                   NULL                
+t5                  int                                     temporary                               64                  4                   NULL                
+t6                  int                                     temporary                               68                  4                   NULL                
+t7                  int                                     temporary                               72                  4                   NULL                
+t8                  int                                     temporary           1                   76                  4                   NULL                
+t9                  int                                     temporary                               80                  4                   NULL                
+u                   int                                     parameter                               84                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+Table Name: main		 Parent Name: global
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+a                   array(10, int)                          local                                   0                   40                  NULL                
+c                   int                                     local                                   40                  4                   NULL                
+err                 int                                     local               1                   44                  4                   NULL                
+i                   int                                     local                                   48                  4                   NULL                
+l                   int                                     local                                   52                  4                   NULL                
+m                   int                                     local                                   56                  4                   NULL                
+n                   int                                     local                                   60                  4                   NULL                
+printInt            int                                     local                                   64                  4                   NULL                
+printStr            int                                     local                                   68                  4                   NULL                
+readInt             int                                     local                                   72                  4                   NULL                
+return              int                                     local                                   76                  4                   NULL                
+t14                 int                                     temporary           10                  80                  4                   NULL                
+t15                 int                                     temporary           1                   84                  4                   NULL                
+t16                 ptr(char)                               temporary           "Size of array: \n" 88                  8                   NULL                
+t17                 int                                     temporary                               96                  4                   NULL                
+t18                 ptr(int)                                temporary                               100                 8                   NULL                
+t19                 int                                     temporary                               108                 4                   NULL                
+t20                 ptr(char)                               temporary           "Enter the elements of the array in sorted order (separated by newlines): \n"112                 8                   NULL                
+t21                 int                                     temporary                               120                 4                   NULL                
+t22                 int                                     temporary           0                   124                 4                   NULL                
+t23                 int                                     temporary                               128                 4                   NULL                
+t24                 int                                     temporary                               132                 4                   NULL                
+t25                 ptr(int)                                temporary                               136                 8                   NULL                
+t26                 int                                     temporary                               144                 4                   NULL                
+t27                 ptr(char)                               temporary           "Search target: \n" 148                 8                   NULL                
+t28                 int                                     temporary                               156                 4                   NULL                
+t29                 ptr(int)                                temporary                               160                 8                   NULL                
+t30                 int                                     temporary                               168                 4                   NULL                
+t31                 int                                     temporary           0                   172                 4                   NULL                
+t32                 int                                     temporary           1                   176                 4                   NULL                
+t33                 int                                     temporary                               180                 4                   NULL                
+t34                 int                                     temporary           0                   184                 4                   NULL                
+t35                 int                                     temporary                               188                 4                   NULL                
+t36                 int                                     temporary           1                   192                 4                   NULL                
+t37                 int                                     temporary                               196                 4                   NULL                
+t38                 ptr(char)                               temporary           "Not found.\n"      200                 8                   NULL                
+t39                 int                                     temporary                               208                 4                   NULL                
+t40                 ptr(char)                               temporary           "Found at position: \n"212                 8                   NULL                
+t41                 int                                     temporary                               220                 4                   NULL                
+t42                 int                                     temporary           1                   224                 4                   NULL                
+t43                 int                                     temporary                               228                 4                   NULL                
+t44                 int                                     temporary                               232                 4                   NULL                
+t45                 ptr(char)                               temporary           "\n"                236                 8                   NULL                
+t46                 int                                     temporary                               244                 4                   NULL                
+t47                 int                                     temporary           0                   248                 4                   NULL                
+u                   int                                     local                                   252                 4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1   : Function start: binarySearch
+2   : 	t0 = 0
+3   : 	c = t0
+4   : 	if l > u goto 6
+5   : 	goto 10
+6   : 	t1 = 1
+7   : 	t2 = - t1
+8   : 	return t2
+9   : 	goto 10
+10  : 	t3 = l + u
+11  : 	t4 = 2
+12  : 	t5 = t3 / t4
+13  : 	mid = t5
+14  : 	t6 = mid * 4
+15  : 	t7 = a[t6]
+16  : 	t = t7
+17  : 	if m < t goto 19
+18  : 	goto 29
+19  : 	param a
+20  : 	param n
+21  : 	param m
+22  : 	param l
+23  : 	t8 = 1
+24  : 	t9 = mid - t8
+25  : 	param t9
+26  : 	t10 = call binarySearch, 5
+27  : 	return t10
+28  : 	goto 42
+29  : 	if m > t goto 31
+30  : 	goto 41
+31  : 	param a
+32  : 	param n
+33  : 	param m
+34  : 	t11 = 1
+35  : 	t12 = mid + t11
+36  : 	param t12
+37  : 	param u
+38  : 	t13 = call binarySearch, 5
+39  : 	return t13
+40  : 	goto 42
+41  : 	return mid
+42  : Function end: binarySearch
+43  : Function start: main
+44  : 	t14 = 10
+45  : 	t15 = 1
+46  : 	err = t15
+47  : 	t16 = "Size of array: \n"
+48  : 	param t16
+49  : 	t17 = call printStr, 1
+50  : 	t18 = &err
+51  : 	param t18
+52  : 	t19 = call readInt, 1
+53  : 	n = t19
+54  : 	t20 = "Enter the elements of the array in sorted order (separated by newlines): \n"
+55  : 	param t20
+56  : 	t21 = call printStr, 1
+57  : 	t22 = 0
+58  : 	i = t22
+59  : 	if i < n goto 64
+60  : 	goto 70
+61  : 	t23 = i
+62  : 	i = i + 1
+63  : 	goto 59
+64  : 	t24 = i * 4
+65  : 	t25 = &err
+66  : 	param t25
+67  : 	t26 = call readInt, 1
+68  : 	a[t24] = t26
+69  : 	goto 61
+70  : 	t27 = "Search target: \n"
+71  : 	param t27
+72  : 	t28 = call printStr, 1
+73  : 	t29 = &err
+74  : 	param t29
+75  : 	t30 = call readInt, 1
+76  : 	m = t30
+77  : 	t31 = 0
+78  : 	l = t31
+79  : 	t32 = 1
+80  : 	t33 = n - t32
+81  : 	u = t33
+82  : 	t34 = 0
+83  : 	c = t34
+84  : 	param a
+85  : 	param n
+86  : 	param m
+87  : 	param l
+88  : 	param u
+89  : 	t35 = call binarySearch, 5
+90  : 	c = t35
+91  : 	t36 = 1
+92  : 	t37 = - t36
+93  : 	if c == t37 goto 95
+94  : 	goto 99
+95  : 	t38 = "Not found.\n"
+96  : 	param t38
+97  : 	t39 = call printStr, 1
+98  : 	goto 110
+99  : 	t40 = "Found at position: \n"
+100 : 	param t40
+101 : 	t41 = call printStr, 1
+102 : 	t42 = 1
+103 : 	t43 = c + t42
+104 : 	c = t43
+105 : 	param c
+106 : 	t44 = call printInt, 1
+107 : 	t45 = "\n"
+108 : 	param t45
+109 : 	t46 = call printStr, 1
+110 : 	t47 = 0
+111 : 	return t47
+112 : Function end: main

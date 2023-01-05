@@ -1,0 +1,174 @@
+============================================================================================================================================
+Table Name: global		 Parent Name: None
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+findlcm             int                                     function                                0                   4                   findlcm             
+gcd                 int                                     function                                4                   4                   gcd                 
+main                int                                     function                                8                   4                   main                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+Table Name: findlcm		 Parent Name: global
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+ans                 int                                     local                                   0                   4                   NULL                
+arr                 array(0, int)                           parameter                               4                   0                   NULL                
+i                   int                                     local                                   4                   4                   NULL                
+n                   int                                     parameter                               8                   4                   NULL                
+return              int                                     local                                   12                  4                   NULL                
+t10                 int                                     temporary                               16                  4                   NULL                
+t11                 int                                     temporary                               20                  4                   NULL                
+t12                 int                                     temporary                               24                  4                   NULL                
+t13                 int                                     temporary                               28                  4                   NULL                
+t14                 int                                     temporary                               32                  4                   NULL                
+t3                  int                                     temporary           0                   36                  4                   NULL                
+t4                  int                                     temporary                               40                  4                   NULL                
+t5                  int                                     temporary                               44                  4                   NULL                
+t6                  int                                     temporary           1                   48                  4                   NULL                
+t7                  int                                     temporary                               52                  4                   NULL                
+t8                  int                                     temporary                               56                  4                   NULL                
+t9                  int                                     temporary                               60                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+Table Name: gcd		 Parent Name: global
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+a                   int                                     parameter                               0                   4                   NULL                
+b                   int                                     parameter                               4                   4                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+t0                  int                                     temporary           0                   12                  4                   NULL                
+t1                  int                                     temporary                               16                  4                   NULL                
+t2                  int                                     temporary                               20                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+Table Name: main		 Parent Name: global
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+a                   array(100, int)                         local                                   0                   400                 NULL                
+c                   int                                     local                                   400                 4                   NULL                
+err                 int                                     local               1                   404                 4                   NULL                
+i                   int                                     local                                   408                 4                   NULL                
+l                   int                                     local                                   412                 4                   NULL                
+m                   int                                     local                                   416                 4                   NULL                
+n                   int                                     local                                   420                 4                   NULL                
+printInt            int                                     local                                   424                 4                   NULL                
+printStr            int                                     local                                   428                 4                   NULL                
+readInt             int                                     local                                   432                 4                   NULL                
+return              int                                     local                                   436                 4                   NULL                
+t15                 int                                     temporary           100                 440                 4                   NULL                
+t16                 int                                     temporary           1                   444                 4                   NULL                
+t17                 ptr(char)                               temporary           "This Program implements LCM\n"448                 8                   NULL                
+t18                 int                                     temporary                               456                 4                   NULL                
+t19                 ptr(char)                               temporary           "Enter the size of an array(<=100): \n"460                 8                   NULL                
+t20                 int                                     temporary                               468                 4                   NULL                
+t21                 ptr(int)                                temporary                               472                 8                   NULL                
+t22                 int                                     temporary                               480                 4                   NULL                
+t23                 ptr(char)                               temporary           "Enter the elements of the array one by one i.e. single element in a line: \n"484                 8                   NULL                
+t24                 int                                     temporary                               492                 4                   NULL                
+t25                 int                                     temporary           0                   496                 4                   NULL                
+t26                 int                                     temporary                               500                 4                   NULL                
+t27                 int                                     temporary                               504                 4                   NULL                
+t28                 ptr(int)                                temporary                               508                 8                   NULL                
+t29                 int                                     temporary                               516                 4                   NULL                
+t30                 int                                     temporary                               520                 4                   NULL                
+t31                 ptr(char)                               temporary           "lcm of given no is: "524                 8                   NULL                
+t32                 int                                     temporary                               532                 4                   NULL                
+t33                 int                                     temporary                               536                 4                   NULL                
+t34                 ptr(char)                               temporary           "\n"                540                 8                   NULL                
+t35                 int                                     temporary                               548                 4                   NULL                
+t36                 int                                     temporary           0                   552                 4                   NULL                
+u                   int                                     local                                   556                 4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1   : Function start: gcd
+2   : 	t0 = 0
+3   : 	if b == t0 goto 5
+4   : 	goto 7
+5   : 	return a
+6   : 	goto 7
+7   : 	param b
+8   : 	t1 = a % b
+9   : 	param t1
+10  : 	t2 = call gcd, 2
+11  : 	return t2
+12  : Function end: gcd
+13  : Function start: findlcm
+14  : 	t3 = 0
+15  : 	t4 = t3 * 4
+16  : 	t5 = arr[t4]
+17  : 	ans = t5
+18  : 	t6 = 1
+19  : 	i = t6
+20  : 	if i < n goto 25
+21  : 	goto 36
+22  : 	t7 = i
+23  : 	i = i + 1
+24  : 	goto 20
+25  : 	t8 = i * 4
+26  : 	t9 = arr[t8]
+27  : 	t10 = t9 * ans
+28  : 	t11 = i * 4
+29  : 	t12 = arr[t11]
+30  : 	param t12
+31  : 	param ans
+32  : 	t13 = call gcd, 2
+33  : 	t14 = t10 / t13
+34  : 	ans = t14
+35  : 	goto 22
+36  : 	return ans
+37  : Function end: findlcm
+38  : Function start: main
+39  : 	t15 = 100
+40  : 	t16 = 1
+41  : 	err = t16
+42  : 	t17 = "This Program implements LCM\n"
+43  : 	param t17
+44  : 	t18 = call printStr, 1
+45  : 	t19 = "Enter the size of an array(<=100): \n"
+46  : 	param t19
+47  : 	t20 = call printStr, 1
+48  : 	t21 = &err
+49  : 	param t21
+50  : 	t22 = call readInt, 1
+51  : 	n = t22
+52  : 	t23 = "Enter the elements of the array one by one i.e. single element in a line: \n"
+53  : 	param t23
+54  : 	t24 = call printStr, 1
+55  : 	t25 = 0
+56  : 	i = t25
+57  : 	if i < n goto 62
+58  : 	goto 68
+59  : 	t26 = i
+60  : 	i = i + 1
+61  : 	goto 57
+62  : 	t27 = i * 4
+63  : 	t28 = &err
+64  : 	param t28
+65  : 	t29 = call readInt, 1
+66  : 	a[t27] = t29
+67  : 	goto 59
+68  : 	param a
+69  : 	param n
+70  : 	t30 = call findlcm, 2
+71  : 	l = t30
+72  : 	t31 = "lcm of given no is: "
+73  : 	param t31
+74  : 	t32 = call printStr, 1
+75  : 	param l
+76  : 	t33 = call printInt, 1
+77  : 	t34 = "\n"
+78  : 	param t34
+79  : 	t35 = call printStr, 1
+80  : 	t36 = 0
+81  : 	return t36
+82  : Function end: main

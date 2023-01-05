@@ -1,0 +1,225 @@
+============================================================================================================================================
+Table Name: global		 Parent Name: None
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+bubbleSort          void                                    function                                0                   0                   bubbleSort          
+main                int                                     function                                0                   4                   main                
+printArray          void                                    function                                4                   0                   printArray          
+swap                void                                    function                                4                   0                   swap                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+Table Name: bubbleSort		 Parent Name: global
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+arr                 array(0, int)                           parameter                               0                   0                   NULL                
+i                   int                                     local                                   0                   4                   NULL                
+j                   int                                     local                                   4                   4                   NULL                
+n                   int                                     parameter                               8                   4                   NULL                
+t10                 int                                     temporary           1                   12                  4                   NULL                
+t11                 int                                     temporary                               16                  4                   NULL                
+t12                 int                                     temporary                               20                  4                   NULL                
+t13                 int                                     temporary                               24                  4                   NULL                
+t14                 int                                     temporary                               28                  4                   NULL                
+t15                 int                                     temporary           1                   32                  4                   NULL                
+t16                 int                                     temporary                               36                  4                   NULL                
+t17                 int                                     temporary                               40                  4                   NULL                
+t18                 int                                     temporary                               44                  4                   NULL                
+t19                 int                                     temporary                               48                  4                   NULL                
+t20                 ptr(array(0, int))                      temporary                               52                  8                   NULL                
+t21                 int                                     temporary           1                   60                  4                   NULL                
+t22                 int                                     temporary                               64                  4                   NULL                
+t23                 int                                     temporary                               68                  4                   NULL                
+t24                 ptr(array(0, int))                      temporary                               72                  8                   NULL                
+t25                 void                                    temporary                               80                  0                   NULL                
+t4                  int                                     temporary           0                   80                  4                   NULL                
+t5                  int                                     temporary           1                   84                  4                   NULL                
+t6                  int                                     temporary                               88                  4                   NULL                
+t7                  int                                     temporary                               92                  4                   NULL                
+t8                  int                                     temporary           0                   96                  4                   NULL                
+t9                  int                                     temporary                               100                 4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+Table Name: main		 Parent Name: global
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+arr                 array(100, int)                         local                                   0                   400                 NULL                
+err                 int                                     local               1                   400                 4                   NULL                
+i                   int                                     local                                   404                 4                   NULL                
+n                   int                                     local                                   408                 4                   NULL                
+printStr            int                                     local                                   412                 4                   NULL                
+readInt             int                                     local                                   416                 4                   NULL                
+return              int                                     local                                   420                 4                   NULL                
+t35                 int                                     temporary           100                 424                 4                   NULL                
+t36                 int                                     temporary           1                   428                 4                   NULL                
+t37                 ptr(char)                               temporary           "Number of numbers: \n"432                 8                   NULL                
+t38                 int                                     temporary                               440                 4                   NULL                
+t39                 ptr(int)                                temporary                               444                 8                   NULL                
+t40                 int                                     temporary                               452                 4                   NULL                
+t41                 ptr(char)                               temporary           "Enter the numbers (separated by newlines): \n"456                 8                   NULL                
+t42                 int                                     temporary                               464                 4                   NULL                
+t43                 int                                     temporary           0                   468                 4                   NULL                
+t44                 int                                     temporary                               472                 4                   NULL                
+t45                 int                                     temporary                               476                 4                   NULL                
+t46                 ptr(int)                                temporary                               480                 8                   NULL                
+t47                 int                                     temporary                               488                 4                   NULL                
+t48                 void                                    temporary                               492                 0                   NULL                
+t49                 ptr(char)                               temporary           "The sorted elements are:\n"492                 8                   NULL                
+t50                 int                                     temporary                               500                 4                   NULL                
+t51                 void                                    temporary                               504                 0                   NULL                
+t52                 int                                     temporary           0                   504                 4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+Table Name: printArray		 Parent Name: global
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+arr                 array(0, int)                           parameter                               0                   0                   NULL                
+i                   int                                     local                                   0                   4                   NULL                
+printInt            int                                     local                                   4                   4                   NULL                
+printStr            int                                     local                                   8                   4                   NULL                
+size                int                                     parameter                               12                  4                   NULL                
+t26                 int                                     temporary           0                   16                  4                   NULL                
+t27                 int                                     temporary                               20                  4                   NULL                
+t28                 int                                     temporary                               24                  4                   NULL                
+t29                 int                                     temporary                               28                  4                   NULL                
+t30                 int                                     temporary                               32                  4                   NULL                
+t31                 ptr(char)                               temporary           " "                 36                  8                   NULL                
+t32                 int                                     temporary                               44                  4                   NULL                
+t33                 ptr(char)                               temporary           "\n"                48                  8                   NULL                
+t34                 int                                     temporary                               56                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+Table Name: swap		 Parent Name: global
+============================================================================================================================================
+Name                Type                                    Category            Initial Value       Offset              Size                Child               
+
+t0                  int                                     temporary                               0                   4                   NULL                
+t1                  int                                     temporary                               4                   4                   NULL                
+t2                  int                                     temporary                               8                   4                   NULL                
+t3                  int                                     temporary                               12                  4                   NULL                
+temp                int                                     local                                   16                  4                   NULL                
+xp                  ptr(int)                                parameter                               20                  8                   NULL                
+yp                  ptr(int)                                parameter                               28                  8                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1   : Function start: swap
+2   : 	t0 = *xp
+3   : 	temp = t0
+4   : 	t1 = *xp
+5   : 	t2 = *yp
+6   : 	*t1 = t2
+7   : 	t3 = *yp
+8   : 	*t3 = temp
+9   : Function end: swap
+10  : Function start: bubbleSort
+11  : 	t4 = 0
+12  : 	i = t4
+13  : 	t5 = 1
+14  : 	t6 = n - t5
+15  : 	if i < t6 goto 20
+16  : 	goto 50
+17  : 	t7 = i
+18  : 	i = i + 1
+19  : 	goto 13
+20  : 	t8 = 0
+21  : 	j = t8
+22  : 	t9 = n - i
+23  : 	t10 = 1
+24  : 	t11 = t9 - t10
+25  : 	if j < t11 goto 30
+26  : 	goto 17
+27  : 	t12 = j
+28  : 	j = j + 1
+29  : 	goto 22
+30  : 	t13 = j * 4
+31  : 	t14 = arr[t13]
+32  : 	t15 = 1
+33  : 	t16 = j + t15
+34  : 	t17 = t16 * 4
+35  : 	t18 = arr[t17]
+36  : 	if t14 > t18 goto 38
+37  : 	goto 27
+38  : 	t19 = j * 4
+39  : 	t20 = &arr
+40  : 	param t20
+41  : 	t21 = 1
+42  : 	t22 = j + t21
+43  : 	t23 = t22 * 4
+44  : 	t24 = &arr
+45  : 	param t24
+46  : 	t25 = call swap, 2
+47  : 	goto 27
+48  : 	goto 27
+49  : 	goto 17
+50  : Function end: bubbleSort
+51  : Function start: printArray
+52  : 	t26 = 0
+53  : 	i = t26
+54  : 	if i < size goto 59
+55  : 	goto 67
+56  : 	t27 = i
+57  : 	i = i + 1
+58  : 	goto 54
+59  : 	t28 = i * 4
+60  : 	t29 = arr[t28]
+61  : 	param t29
+62  : 	t30 = call printInt, 1
+63  : 	t31 = " "
+64  : 	param t31
+65  : 	t32 = call printStr, 1
+66  : 	goto 56
+67  : 	t33 = "\n"
+68  : 	param t33
+69  : 	t34 = call printStr, 1
+70  : Function end: printArray
+71  : Function start: main
+72  : 	t35 = 100
+73  : 	t36 = 1
+74  : 	err = t36
+75  : 	t37 = "Number of numbers: \n"
+76  : 	param t37
+77  : 	t38 = call printStr, 1
+78  : 	t39 = &err
+79  : 	param t39
+80  : 	t40 = call readInt, 1
+81  : 	n = t40
+82  : 	t41 = "Enter the numbers (separated by newlines): \n"
+83  : 	param t41
+84  : 	t42 = call printStr, 1
+85  : 	t43 = 0
+86  : 	i = t43
+87  : 	if i < n goto 92
+88  : 	goto 98
+89  : 	t44 = i
+90  : 	i = i + 1
+91  : 	goto 87
+92  : 	t45 = i * 4
+93  : 	t46 = &err
+94  : 	param t46
+95  : 	t47 = call readInt, 1
+96  : 	arr[t45] = t47
+97  : 	goto 89
+98  : 	param arr
+99  : 	param n
+100 : 	t48 = call bubbleSort, 2
+101 : 	t49 = "The sorted elements are:\n"
+102 : 	param t49
+103 : 	t50 = call printStr, 1
+104 : 	param arr
+105 : 	param n
+106 : 	t51 = call printArray, 2
+107 : 	t52 = 0
+108 : 	return t52
+109 : Function end: main
